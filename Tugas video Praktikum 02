@@ -1,0 +1,78 @@
+#Nama :Michelle Shannen Audrey Darmawan
+#NIM :71200564
+
+'''
+Pada masa pandemi ini Audrey memutuskan untuk menjual masker wajah, dikarenakan pada saat masa pandemi maka banyak orang yang berminat
+Maka jualan Audreypun menjadi sukses dan berpenghasilan banyak. Tipe serta harga masker yang Audrey jual pun beragam,
+tipe 1:harga beli:10_000 harga jual: 15_000
+tipe 2:harga beli:13_000 harga jual: 19_000
+tipe 3:harga beli:7_000 harga jual: 12_000 , 
+
+menghitung hasil kotor penjualan tiap tipe masker dalam rupiah
+menghitung hasil kotor seluruh penjualan masker dalam rupiah
+menghitung keuntungan setiap tipe masker dalam persen
+menghitung total keuntungan seluruh penjualan masker dalam rupiah
+
+
+Input= harga jual masing-masing tipe ; harga beli masing-masing tipe ; jumlah masker yang dijual oleh tiap tipe
+
+Proses:
+1.menghitung hasil kotor setiap tipe
+2.menghitung keuntungan persen dari setiap tipe
+3.menghitung hasil kotor seluruh penjualan masker
+4.menghitung total keuntungan seluruh penjualan masker
+
+Output:
+1.Dapat mengetahui hasil kotor penjualan setiap tipe masker dalam rupiah
+2.Dapat mengetahui keuntungan setiap tipe masker dalam persen
+3.Dapat mengetahui hasil kotor seluruh penjualan masker dalam rupiah
+4.Dapat mengetahui total keuntungan seluruh penjualan masker dalam rupiah
+'''
+
+print("***********PROGRAM PENGHITUNG************")
+print("------------------TIPE 1------------------")
+harga_belitipe1=int(input("Harga beli = "))
+harga_jualtipe1=int(input("Harga jual = "))
+jumlah_masker1=int(input("Jumlah penjualan (dalam pcs) = "))
+
+hasil_kotortipe1=harga_jualtipe1*jumlah_masker1
+keuntungan_tipe1=((harga_jualtipe1-harga_belitipe1)*jumlah_masker1)
+persen_tipe1=keuntungan_tipe1*100/(harga_belitipe1*jumlah_masker1)
+
+print("Penghasilan kotor penjualan masker tipe 1 = Rp",hasil_kotortipe1)
+print("Keuntungan dalam persen -> %.1f"%(persen_tipe1),"%")
+print("Keuntungan penjualan",jumlah_masker1," masker tipe 1 adalah Rp ",keuntungan_tipe1)
+
+print("------------------TIPE 2------------------")
+harga_belitipe2=int(input("Harga beli = "))
+harga_jualtipe2=int(input("Harga jual = "))
+jumlah_masker2=int(input("Jumlah penjualan (dalam pcs) = "))
+
+hasil_kotortipe2=harga_jualtipe2*jumlah_masker2
+keuntungan_tipe2=((harga_jualtipe2-harga_belitipe2)*jumlah_masker2)
+persen_tipe2=keuntungan_tipe2*100/(harga_belitipe2*jumlah_masker2)
+
+print("Penghasilan kotor penjualan masker tipe 2 = Rp",hasil_kotortipe2)
+print("Keuntungan dalam persen -> %.1f"%(persen_tipe2),"%")
+print("Keuntungan penjualan",jumlah_masker2," masker tipe 2 adalah Rp ",keuntungan_tipe2)
+
+print("------------------TIPE 3------------------")
+harga_belitipe3=int(input("Harga beli = "))
+harga_jualtipe3=int(input("Harga jual = "))
+jumlah_masker3=int(input("Jumlah penjualan (dalam pcs) = "))
+
+hasil_kotortipe3=harga_jualtipe3*jumlah_masker3
+keuntungan_tipe3=((harga_jualtipe3-harga_belitipe3)*jumlah_masker3)
+persen_tipe3=keuntungan_tipe3*100/(harga_belitipe3*jumlah_masker3)
+
+print("Penghasilan kotor penjualan masker tipe 3 = Rp",hasil_kotortipe3)
+print("Keuntungan dalam persen -> %.1f"%(persen_tipe3),"%")
+print("Keuntungan penjualan",jumlah_masker3,"masker tipe 3 adalah Rp ",keuntungan_tipe3)
+
+seluruh_hasil_kotor= hasil_kotortipe1+ hasil_kotortipe2 + hasil_kotortipe3
+seluruh_hasil_keuntungan= keuntungan_tipe1 + keuntungan_tipe2 + keuntungan_tipe3
+
+print("---------SUMMARIZE-------------")
+
+print("Hasil kotor seluruh penjualan masker adalah Rp ",seluruh_hasil_kotor)
+print("Total keuntungan seluruh penjualan masker adalah Rp", seluruh_hasil_keuntungan)
